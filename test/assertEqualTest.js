@@ -27,4 +27,3 @@ describe('#assertEqual', () => {
         expect(output).to.equal(true);
     });
 });
-
