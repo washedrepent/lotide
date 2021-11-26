@@ -1,3 +1,4 @@
+//find the middle most index of an array
 const middle = function(array) {
     let middleArray = [];
     let middleIndex = Math.floor(array.length / 2);

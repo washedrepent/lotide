@@ -1,18 +1,12 @@
-const assertEqual = function(actual, expected) {
-    if (actual === expected) {
-        console.log(`✅✅✅ Assertion Passed: ${actual} === ${expected}`);
-    } else {
-        console.log(`🛑🛑🛑 Assertion Failed: ${actual} !== ${expected}`);
-    }
-};
-
-
+// count the number of times a value occurs
 const countOnly = function(allItems, itemsToCount) {
     const results = {};
 
     //iterate over allItems
     for (const item of allItems) {
+        //if item is in itemsToCount
         if (itemsToCount[item]) {
+            //increment the value of item in results
             if (results[item]) {
                 results[item] += 1;
             } else {
@@ -20,27 +14,8 @@ const countOnly = function(allItems, itemsToCount) {
             }
         }
     }
+    //return results
     return results;
 };
 
-const firstNames = [
-    "Karl",
-    "Salima",
-    "Agouhanna",
-    "Fang",
-    "Kavith",
-    "Jason",
-    "Salima",
-    "Fang",
-    "Joe"
-  ];
-  
-const result1 = countOnly(firstNames, { "Jason": true, "Karima": true, "Fang": true, "Agouhanna": false });
-assertEqual(result1["Jason"], 1);
-assertEqual(result1["Karima"], undefined);
-assertEqual(result1["Fang"], 2);
-assertEqual(result1["Agouhanna"], undefined);
-
-//assertEqual(countOnly([1, 2, 3, 4, 5], { "3": true, "5": true }), { "3": 1, "5": 2 });
-//assertEqual(countOnly([1, 2, 3, 4, 5], { "3": true, "5": true }), { "3": 1, "5": 2 });
-//assertEqual(countOnly([1, 2, 3, 4, 5], { "3": true, "5": true }), { "3": 1, "5": 2 });
+module.exports = countOnly;

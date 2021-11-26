@@ -4,7 +4,7 @@ const middle = require('../middle');
 describe("#middle", () => {
     it("returns [] for [1]", () => {
         const output = middle([1]);
-        expect(output).to.equal([]);
+        expect(output).to.eql([]);
     });
 
     it("returns [] for [1, 2]", () => {
