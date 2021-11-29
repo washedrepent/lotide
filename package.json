@@ -1,26 +1,26 @@
 {
-  "name": "@washedrepent/lotide",
-  "version": "1.0.1",
-  "description": "A mini clone of the Lodash library.",
-  "main": "assertArraysEqual.js",
-  "directories": {
-    "test": "test"
-  },
-  "scripts": {
-    "test": "./node_modules/mocha/bin/mocha"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/washedrepent/lotide.git"
-  },
-  "author": "Hans-Eric Lippke",
-  "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/washedrepent/lotide/issues"
-  },
-  "homepage": "https://github.com/washedrepent/lotide#readme",
-  "devDependencies": {
-    "chai": "^4.3.4",
-    "mocha": "^9.1.3"
-  }
+    "name": "@washedrepent/lotide",
+    "version": "1.0.1",
+    "description": "A mini clone of the Lodash library.",
+    "main": "index.js",
+    "directories": {
+        "test": "test"
+    },
+    "scripts": {
+        "test": "./node_modules/mocha/bin/mocha"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/washedrepent/lotide.git"
+    },
+    "author": "Hans-Eric Lippke",
+    "license": "ISC",
+    "bugs": {
+        "url": "https://github.com/washedrepent/lotide/issues"
+    },
+    "homepage": "https://github.com/washedrepent/lotide#readme",
+    "devDependencies": {
+        "chai": "^4.3.4",
+        "mocha": "^9.1.3"
+    }
 }
